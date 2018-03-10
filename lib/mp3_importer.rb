@@ -1,3 +1,4 @@
+require'pry'
 class MP3Importer
   attr_accessor :path, :files
 
@@ -8,6 +9,7 @@ class MP3Importer
 
   def self.files
     @files =  Dir["#{path}/*.mp3"]
+    binding.pry
   end
 
   def self.import
