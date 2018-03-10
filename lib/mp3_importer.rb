@@ -12,8 +12,8 @@ class MP3Importer
     binding.pry
   end
 
-  def self.import
-    self.files
+  def import
+    files
     @files.each do |f|
       Song.new_by_filename
     end
