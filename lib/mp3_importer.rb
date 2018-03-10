@@ -7,7 +7,7 @@ class MP3Importer
     @files = []
   end
 
-  def self.files
+  def files
     @files =  Dir["#{path}/*.mp3"]
     binding.pry
   end
